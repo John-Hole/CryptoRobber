@@ -1,14 +1,4 @@
-// Funzione globale per aprire il trailer
-function openTrailer() {
-    document.getElementById('trailerModal').style.display = 'block';
-  }
-  
-  // Funzione globale per chiudere il trailer
-  function closeTrailer() {
-    document.getElementById('trailerModal').style.display = 'none';
-  }
-  
-  document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {
     const langToggle = document.getElementById("langToggle");
     let isItalian = false;
   

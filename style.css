@@ -6,12 +6,12 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #1d1d1d; /* Nero */
-    color: black; /* Testi neri */
+    background-color: #1a1a1a; /* Blu sbiadito scuro */
+    color: white;
   }
   
   header {
-    background-color: #8e44ad; /* Viola scuro */
+    background-color: #7b3294; /* Viola medio */
     color: white;
     padding: 20px;
     display: flex;
@@ -48,7 +48,7 @@
     cursor: pointer;
     top: 0; left: 0;
     right: 0; bottom: 0;
-    background-color: #6c5b7b; /* Viola medio */
+    background-color: #dadaeb; /* Grigio chiaro */
     transition: .4s;
     border-radius: 34px;
   }
@@ -66,7 +66,7 @@
   }
   
   input:checked + .slider {
-    background-color: #453a58; /* Viola scuro */
+    background-color: #7b3294; /* Viola medio */
   }
   
   input:checked + .slider:before {
@@ -74,7 +74,7 @@
   }
   
   nav {
-    background-color: #453a58; /* Viola scuro */
+    background-color: #1a1a1a; /* Nero scuro */
     overflow: hidden;
   }
   
@@ -103,7 +103,7 @@
   }
   
   .card {
-    background-color: #ecf0f1; /* Bianco chiaro */
+    background-color: #ffffff; /* Bianco */
     border-radius: 12px;
     padding: 20px;
     margin-bottom: 30px;
@@ -118,59 +118,26 @@
     margin-top: 10px;
   }
   
-  .play-button {
-    background-color: #8e44ad; /* Viola scuro */
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    display: block;
-    margin: 20px auto 0 auto;
+  .video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    overflow: hidden;
+    border-radius: 10px;
+    margin-top: 20px;
   }
   
-  .play-button:hover {
-    background-color: #6c5b7b;
-  }
-  
-  .modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
+  .video-container iframe {
+    position: absolute;
     top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    overflow: auto;
-    background-color: rgba(0,0,0,0.4);
-  }
-  
-  .modal-content {
-    background-color: #ecf0f1;
-    margin: 15% auto;
-    padding: 20px;
-    border-radius: 10px;
-    width: 80%;
-    max-width: 600px;
-    color: black;
-  }
-  
-  .close {
-    color: black;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    cursor: pointer;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: #8e44ad;
-    text-decoration: none;
+    border: none;
   }
   
   footer {
-    background-color: #1d1d1d;
+    background-color: #1a1a1a;
     color: white;
     text-align: center;
     padding: 15px;

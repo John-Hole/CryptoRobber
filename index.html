@@ -82,17 +82,12 @@
       <!-- Trailer -->
       <article id="trailer" class="card">
         <h2 data-en="Watch Trailer" data-it="Guarda il Trailer"></h2>
-        <button onclick="openTrailer()" class="play-button">Play Trailer</button>
-
-        <!-- Modal per il trailer -->
-        <div id="trailerModal" class="modal">
-          <div class="modal-content">
-            <span class="close" onclick="closeTrailer()">&times;</span>
-            <video controls width="100%" height="auto">
-              <source src="Crypto Rubbers.MOV" type="video/mp4">
-              Il tuo browser non supporta il formato video.
-            </video>
-          </div>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/x_8WKFZCIUc?si=CXjSUamvHkEL4Q2B" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
       </article>
 
